@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab')
+@import "colors"
+
+html, body
+	font-size: 10px
+	font-family: Roboto Slab
+	color: #555
+
+ul, li
+	list-style: none
+
+h1
+	font-size: 4.8rem
+	font-family: Montserrat
+	font-weight: 400
+
+
+h2
+	font-size: 3rem
+	font-family: Roboto Slab
+	font-weight: 400
+
+h3
+	font-size: 2rem
+	font-weight: 400
+
+h4
+	font-size: 1.6rem
+	font-weight: 400
+
+h5
+	font-size: 1.4rem
+	font-weight: 400
+	text-transform: uppercase
+	font-family: Montserrat
+
+p
+	font-size: 1.4rem
+	line-height: 2
+
+a
+	text-decoration: none
+
+*
+	margin: 0
+	padding: 0
+
+
+
+/* header section */
+
+
+
+.header
+	color: #fff
+	background-image: url(../img/header-bg.png)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+.nav
+	width: 100%
+	padding-top: 2rem 
+	position: fixed
+	background-color: rgba(128,128,128,0.6)
+	z-index: 999
+	transition: all 0.3s
+
+	
+.logo
+	margin-bottom: 2rem
+	a
+		display: inline-block
+	img
+		width: 9.1rem
+
+.menu
+	margin-bottom: 2rem
+
+.link
+	color: #fff
+	font-size: 1.4rem
+	font-family: Montserrat
+	margin: 0 1.8rem
+	transition: all 0.3s
+	font-weight: 400
+	border-bottom: 2px solid rgba(255,255,255,0)
+	&:hover
+		color: #D8D8D8
+
+.active
+	color: #fff
+	border-bottom: 2px solid rgba(255,255,255,1)
+
+
+.d-block
+	display: block
+
+.promo-block
+	text-align: center
+	padding: 24rem 0
+	h1
+		margin-bottom: 2rem
+	h3
+		margin-bottom: 5rem
+
+.btn
+	display: inline-block
+	padding: 1.7rem 3rem
+	border: .2rem solid #fff
+	border-radius: .2rem
+	color: #fff
+	font-size: 1.9rem
+	text-transform: uppercase
+	transition: all 0.3s
+	&:hover
+		background-color: #fff
+		color: #c0301c
+
+
+/* services-section */
+
+.services-section
+	text-align: center
+	padding-bottom: 10rem
+
+.title
+	text-align: center
+	padding: 10rem 0 7rem 0
+	h3
+		font-family: Montserrat
+		text-transform: uppercase
+		margin-bottom: 2.8rem
+	h4
+		margin-top: 2.8rem
+
+.separator
+	width: 5rem
+	height: .2rem
+	background-color: #555
+	margin: 0 auto
+
+.single-services
+	h5
+		margin: 3rem 0 2.4rem 0
+
+.service
+	padding: 0 .7rem
+
+.ellipse
+	width: 8.9rem
+	height: 8.9rem
+	border-radius: 50%
+	border: .2rem solid #ddd
+	margin: 0 auto
+	background-color: #fff
+	color: #c0301c
+	transition: all 0.3s
+	&:hover
+		background-color: #c0301c
+		color: #fff
+	i
+		font-size: 5rem
+
+/* about-section */
+
+.about-section
+	background-color: #f8f8f8
+	padding-bottom: 4rem
+
+.about-content
+	margin-bottom: 7rem
+
+
+.member
+	width: 263px
+	padding-bottom: 6rem
+	text-align: center
+	cursor: pointer
+	margin: 0 1.2rem
+	&:hover .team-social 
+		display: block
+		background-color: rgba(0,0,0,0.3)
+
+.member-photo
+	width: 100%
+	height: 25rem
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+
+.member-photo-1
+	background-image: url(../img/member-1.png)
+
+.member-photo-2
+	background-image: url(../img/member-2.png)
+
+.member-photo-3
+	background-image: url(../img/member-3.png)
+
+.member-photo-4
+	background-image: url(../img/member-4.png)
+
+.slick-prev, .slick-next
+	width: 3rem
+	height: 3rem
+	background-color: rgba(128,128,128,0.4)
+	position: absolute
+	display: block
+	cursor: pointer
+	top: 50%
+	padding: 0
+	border: none
+	outline: none
+	z-index: 3
+	background-repeat: no-repeat
+	background-position: center
+	margin-top: -7.5rem
+	transition: all 0.3s
+	&:hover
+		outline: none
+		background-color: #c0301c
+   
+
+.slick-prev
+	left: 0
+	background-image: url(../img/ar-left.png)
+	transform: rotate(180deg)
+
+.slick-next
+	right: 0
+	background-image: url(../img/ar-left.png)
+
+
+.name
+	font-family: Montserrat
+	font-size: 1.4rem
+	text-transform: uppercase
+	margin-top: 1.5rem
+
+.working-position
+	font-family: "Roboto Slab"
+	font-size: 1.3rem
+	margin-top: 1rem
+
+.team-social
+	width: 100%
+	height: 100%
+	display: none
+	background-color: rgba(0,0,0,0.3)
+
+.team-soc-icons-section
+	padding-top: 19rem
+
+
+.team-soc-icon
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 2.8rem
+	height: 2.8rem
+	margin: 0 .3rem
+	color: #fff
+	transition: all 0.3s
+	&:hover
+		background-color: #c0301c
+	i
+		font-size: 1.6rem
+
+
+.top-nav-btn
+	display: none
+	cursor: pointer
+	i
+		font-size: 2rem
+
+
+
+/* works-section */
+
+
+.all-works-navigation
+	margin-top: 2.8rem
+
+		
+.work-link
+	margin: 0 1.2rem
+	transition: all 0.3s
+	font-size: 1.6rem
+	color: #555
+	font-size: 1.6rem
+	margin: 0 1.2rem
+	transition: all 0.3s
+	&:hover
+		color: #c0301c
+
+.active-work-link
+	color: #c0301c
+
+
+.single-work
+	width: 31.33%
+	height: 32rem
+	margin: 1rem 1%
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	transition: all 0.3s
+	&:hover .inner-work-info
+		display: block
+
+
+.single-work-1
+	background-image: url(../img/work-1.png)
+
+.single-work-2
+	background-image: url(../img/work-2.png)
+
+.single-work-3
+	background-image: url(../img/work-3.png)
+
+.single-work-4
+	background-image: url(../img/work-4.png)
+
+.single-work-5
+	background-image: url(../img/work-5.png)
+
+.single-work-6
+	background-image: url(../img/work-6.png)
+
+.single-work-7
+	background-image: url(../img/work-7.png)
+
+.single-work-8
+	background-image: url(../img/work-8.png)
+
+.single-work-9
+	background-image: url(../img/work-9.png)
+
+.inner-work-info
+	width: 100%
+	height: 100%
+	background-color: rgba(192,48,28,0.7)
+	display: none
+
+
+
+.work-caption
+	width: 100%
+	height: 100%
+	
+
+.name-work
+	font-size: 1.8rem
+	font-family: Montserrat
+	color: #fff
+	margin-bottom: 1.6rem
+
+
+.work-category
+	font-size: 1.2rem
+	font-family: Roboto Slab
+	color: #fff
+	margin-bottom: 2.5rem
+	
+
+.view-work
+	font-size: 1.4rem
+	font-family: Roboto Slab
+	text-transform: uppercase
+	padding: 1.5rem 2rem 1.3rem 2rem
+	background-color: #fff
+	color: #c0301c
+	transition: all 0.3s
+	&:hover
+		background-color: rgba(255,255,255,0.7)
+
+
+/* your-project-section */
+
+.your-project-section
+	text-align: center
+	color: #fff
+	margin-top: 7rem
+	padding: 10rem 0
+	background-image: url(../img/bg-your-project-section.png)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+.touch-btn
+	margin-top: 5.3rem
+
+/* blog-section */
+
+
+.blog-section
+	padding-bottom: 10rem
+
+.news-post
+	a
+		color: #555
+		transition: all 0.3s
+	&:hover a
+		color: #c0301c
+
+.author-description
+	margin-left: -20px
+
+
+.post-img
+	width: 100%
+	display: inline-block
+	img
+		width: 100%
+
+  
+.publication-date
+	width: 7.2rem
+	height: 7.2rem
+	border: .2rem solid #555
+	a
+		color: #777
+		font-weight: 700
+
+.date
+	font-size: 2.4rem
+
+.month
+	font-family: Montserrat
+	font-size: 1.4rem
+	text-transform: uppercase
+
+.news-header
+	text-transform: uppercase
+	font-size: 1.6rem
+	font-family: Montserrat
+
+.author-info
+	font-family: Roboto Slab
+	font-size: 1.3rem
+	margin-top: 1rem
+
+.news-content
+	margin-top: 2.3rem
+
+
+.more
+	font-family: "Roboto Slab"
+	font-size: 1.3rem
+	font-weight: 700
+	text-transform: uppercase
+	margin-top: 3.4rem
+	display: inline-block
+
+
+.news-separator
+	width: 100%
+	height: 1px
+	background-color: #ddd
+	margin: 3.8rem 0
+
+
+/* clients-section */
+
+.clients-section
+	background-color: #f8f8f8
+	padding: 10rem 0
+
+.clients-logo
+	margin-bottom: 4rem
+	a
+		display: inline-block
+		margin-bottom: 2rem
+
+
+
+.client-1
+	img
+		width: 14.1rem
+
+.client-2
+	img
+		width: 12.1rem
+
+.client-3
+	img
+		width: 14.2rem
+
+.client-4
+	img
+		width: 10.9rem
+
+.client-5
+	img
+		width: 12.3rem
+
+.feedback-from-clients
+	max-width: 70rem
+	margin: 0 auto
+
+.feedback-text
+	font-size: 1.5rem
+	text-align: center
+	line-height: 1.8
+	font-family: Montserrat
+	cursor: pointer
+
+.feedback-author
+	margin-top: 1.5rem
+	font-size: 2rem
+	font-family: Roboto Slab
+
+.slick-dots
+	li
+		button
+			&::before 
+				color: #404040
+
+
+.slick-dots
+	li.slick-active
+		button
+			&::before 
+				color: #c0301c
+
+
+
+/* contact-section */
+
+
+.contact-section
+	padding-bottom: 6rem
+
+.contact-info-head
+	font-family: Montserrat
+	font-size: 1.4rem
+	text-transform: uppercase
+	i
+		font-size: 2rem
+		margin-right: 0.5rem
+
+.contact-description
+	margin: .8rem 0 0 0
+	font-family: Roboto Slab
+	font-size: 1.2rem
+	line-height: 1.8
+
+.contact-info
+	margin-bottom: 4rem
+
+
+.form-control
+	width: 100%
+	height: 4.6rem
+	margin-bottom: 2rem
+	padding-left: 1.5rem
+	border-radius: 0
+	border: 1px solid #555
+	color: #555
+	font-size: 1.5rem
+	&:focus
+		border: 1px solid #c0301c
+
+textarea
+	width: 100%
+	height: 10rem
+	resize: none
+	border-radius: 0
+	border: 1px solid #555
+	color: #555
+	padding-left: 1.5rem
+	padding-top: 1rem
+	font-family: sans-serif
+	font-size: 1.5rem
+	transition: all 0.3s
+	&:focus
+		border: 1px solid #c0301c
+
+.submit-btn
+	margin-top: 2rem
+	border: 1px solid #555
+	background-color: #fff
+	padding: 1.7rem 3rem
+	cursor: pointer
+	text-transform: uppercase
+	font-size: 1.2rem
+	color: #555
+	transition: all 0.3s
+	&:hover
+		border: 1px solid #c0301c
+
+
+/* footer */
+
+.footer
+	background-color: #c0301c
+
+.footer-title
+	color: #fff
+	padding: 4rem 0 2rem 0
+
+.separator-footer
+	background-color: #fff
+
+.footer-soc
+	margin-bottom: 2rem
+	a
+		border: 0.2rem solid #fff
+		border-radius: 50%
+		padding: 2rem
+		margin: 0 0.6rem
+		transition: all 0.3s
+		&:hover
+			background-color: #fff
+			color: #c0301c
+
+.copyright
+	font-size: 1.8rem
+	margin-top: 2rem
+
+
+@import "media"
+
+
+
+
+
